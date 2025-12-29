@@ -4,14 +4,14 @@ FROM node:20-alpine
 # Set working directory
 WORKDIR /app
 
-# Copy package files
-COPY package.json yarn.lock ./
+# Copy package files from backend directory
+COPY backend/package.json backend/yarn.lock ./
 
 # Install dependencies
 RUN yarn install --frozen-lockfile --production=false
 
-# Copy source code
-COPY . .
+# Copy backend source code
+COPY backend/ .
 
 # Build TypeScript
 RUN yarn build
