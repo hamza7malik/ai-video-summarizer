@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "build": "tsc",
-    "start": "node --experimental-require-module dist/server.js",
+    "start": "node dist/server.js",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write \"src/**/*.ts\""
   },
@@ -19,6 +19,9 @@
   ],
   "author": "",
   "license": "MIT",
+  "engines": {
+    "node": "20.x"
+  },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
     "cors": "^2.8.5",
