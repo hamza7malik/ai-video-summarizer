@@ -7,6 +7,11 @@
 ![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react)
 ![Node](https://img.shields.io/badge/Node-18+-339933?style=for-the-badge&logo=node.js)
 
+## 🎬 Demo
+
+[Press here to watch demo](https://github.com/user-attachments/assets/d0daff27-ae0d-4e68-a7a3-d29dc8a99153)
+
+
 ## ✨ Features
 
 - 🎥 **Automatic Transcript Extraction** - Fetch captions from any YouTube video
