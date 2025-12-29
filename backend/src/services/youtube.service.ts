@@ -30,7 +30,6 @@ class YouTubeService {
       const videoId = this.extractVideoId(videoUrl);
       logger.info(`Fetching transcript for video: ${videoId}`);
 
-      // Dynamic import for ES Module
       const { YoutubeTranscript } = await import('youtube-transcript-plus');
       const transcript = await YoutubeTranscript.fetchTranscript(videoId);
 
